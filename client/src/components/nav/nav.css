@@ -1,0 +1,83 @@
+/* nav{
+    margin:0%;
+} */
+.ecoshop{
+display:flex;
+background: #237031;
+justify-content: space-around;
+color:white;
+margin-bottom:10px
+}
+hr{
+    color:#237031;
+    background: #237031;
+}
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999; /* Ajustez ce nombre selon vos besoins */
+  }
+
+.choix {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background: white;
+}
+.menu{
+    border:none;
+    height:100%;
+    color:#237031;
+    background: #D9D9D9;
+}
+.menu:hover{
+    background: #D9D9D9;
+
+}
+.eco{
+    background: #237031;
+    width: 100%;
+    height: 132px;
+
+}
+.user{
+    display:flex;
+    margin-top:15px
+}
+.link-nav {
+    color:#76B900;
+    margin-left:20px;
+}
+
+#profil-btn{
+    margin-top: 30%;
+    margin-left: 100%;
+}
+
+.menu {
+    background: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius:5%;
+}
+
+.menu:hover {
+    background: #174920;
+    color:white;
+}
+
+.article-link {
+    text-decoration: none;
+    color: inherit;
+}

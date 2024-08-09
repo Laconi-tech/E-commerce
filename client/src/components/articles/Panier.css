@@ -1,0 +1,77 @@
+.custom-dropdown-item {
+    background-color: rgb(120, 235, 193);
+    padding: 10px;
+}
+
+.dropdown-panier{
+    background-color: rgb(120, 235, 193) ;
+}
+
+.item-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-image {
+    width: 50px;
+}
+
+.item-info {
+    flex-grow: 1;
+    margin: 0 10px;
+}
+
+.item-title {
+    margin: 0;
+    font-size: 12px;
+}
+
+.item-price {
+    margin: 0;
+    font-size: 12px;
+    color: rgb(153, 0, 0);
+    font-weight: 800;
+}
+
+.delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgb(153, 0, 0);
+}
+
+.prix{
+    color: black;
+}
+
+.sac1{
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.barre{
+    text-decoration: line-through;
+    color:black;
+    font-weight: 100;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.form-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Espacement entre le bouton et les champs de formulaire */
+  }
+

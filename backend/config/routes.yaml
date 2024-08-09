@@ -1,0 +1,168 @@
+app_homepage:
+  path: /
+  controller: App\Controller\ArticleController::index
+
+api_article:
+  path: /api/article
+  controller: App\Controller\ApiController::getArticle
+
+api_client:
+  path: /api/client
+  controller: App\Controller\ApiController::getClient
+  
+
+api_pays:
+  path: /api/pays
+  controller: App\Controller\ApiController::getPays
+
+app_add_product:
+  path: /api/add
+  controller: App\Controller\AddProductController::createProduct
+
+api_article_detail:
+  path: /api/article/{id}
+  controller: App\Controller\ApiController::getArticleDetail
+
+api_article_popular:
+  path: /api/populararticle
+  controller: App\Controller\PopularArticleController::getPopularArticle
+
+app_crud_article:
+  path: /api/modif
+  controller: App\Controller\CrudArticleController::update
+
+app_delete_article:
+  path: /api/modif/{id}
+  controller: App\Controller\CrudArticleController::DeleteArticle
+
+api_register:
+  path: /api/register
+  controller: App\Controller\AuthController::createClient
+
+# config/routes.yaml
+
+api_profile_update:
+    path: '/api/update'
+    controller: App\Controller\AuthController::updateProfile
+    methods: ['POST']
+
+categories_admin:
+  path: /modify_categories
+  controller: App\Controller\ModifyCategoriesController::modifyCategories
+
+add_category:
+  path: /add_category
+  controller: App\Controller\ModifyCategoriesController::addCategory
+  methods: [POST]
+
+show_categories:
+  path: /show_categories
+  controller: App\Controller\ModifyCategoriesController::showCategories
+
+delete_category:
+  path: /delete_category/{categoryId}
+  controller: App\Controller\ModifyCategoriesController::deleteCategory
+  methods: [DELETE]
+
+api_categorie:
+  path: /api/categorie
+  controller: App\Controller\ApiController::getCategorie
+
+consultation:
+  path: /consultation
+  controller: App\Controller\ApiController::addConsultation
+
+make_panier:
+  path: /make/panier
+  controller: App\Controller\ApiController::makePanier
+
+panier:
+  path: /panier/{id_client}
+  controller: App\Controller\ApiController::getPanierItems
+
+cart-item:
+  path: /cart/item
+  controller: App\Controller\ApiController::removeFromPanier
+
+api_login:
+  path: /api/login
+  controller: App\Controller\LoginController::login
+
+api_profile:
+  path: /api/profile
+  controller: App\Controller\LoginController::getUserData
+
+recommander:
+  path: /recommander
+  controller: App\Controller\ApiController::recommander
+
+make-commande:
+  path: /make/commande
+  controller: App\Controller\ApiController::makeCommande
+
+noconnect:
+  path: /noconnect
+  controller: App\Controller\ApiController::makePanierWithout
+
+update_rabais:
+  path: /update/rabais
+  controller: App\Controller\ApiController::updateRabais
+
+paniernoco:
+  path: /panique/{id_panier}
+  controller: App\Controller\ApiController::getPanierItemsNoco
+
+register: 
+  path: /register
+  controller: App\Controller\AuthController::register
+
+login:
+  path: /login
+  controller: App\Controller\LoginController::loginnoco
+
+moyen:
+  path: /api/moyen
+  controller: App\Controller\ApiController::addMoyen
+
+moyen_get:
+  path: /moyen/{id_client}
+  controller: App\Controller\ApiController::getMoyen
+
+update:
+  path: /update/moyen
+  controller: App\Controller\ApiController::setMoyen
+
+moyen_get_noco:
+  path: /moyenNoco/{id_moyen}
+  controller: App\Controller\ApiController::getMoyenNoco
+
+make_noco:
+  path: /order/noco
+  controller: App\Controller\ApiController::orderNoco
+api_orders:
+  path: /api/orders
+  controller: App\Controller\ApiController::getOrders
+  
+pays_detail:
+  path: /api/pays/{id_pays}
+  controller: App\Controller\ApiController::getDetails
+
+api_commentaire:
+  path: /api/commentaire
+  controller: App\Controller\ApiController::setCommentaire
+
+commentaires:
+  path: /commentaires
+  controller: App\Controller\ApiController::getCommentaire
+
+commentairesD:
+  path: /commentaires/{id_article} 
+  controller: App\Controller\ApiController::getCommentaireD
+
+client:
+  path: /client
+  controller: App\Controller\ExcelController::getClient
+
+orders:
+  path: /orders
+  controller: App\Controller\ExcelController::getOrders

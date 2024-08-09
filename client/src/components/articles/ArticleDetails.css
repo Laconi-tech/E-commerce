@@ -1,0 +1,136 @@
+/* Styling for the article details container */
+.article-details-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 1%;
+}
+
+/* Styling for the article image */
+.article-details-container .article-image {
+  flex: 1;
+}
+
+.article-details-container .article-image img {
+  width: 100%;
+  margin-top: 20%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.buy-button-rupture{
+  background-color: grey;
+}
+
+/* Styling for the article payment details */
+.article-details-container .payment-details {
+  flex: 1;
+  padding: 0 20px;
+}
+
+/* Styling for the article title */
+.article-details-container .payment-details h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Styling for the article characteristics */
+.article-details-container .payment-details p {
+  margin: 5px 0;
+}
+
+/* Styling for the article price */
+.article-details-container .payment-details .price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #e53e3e;
+}
+
+/* Styling for the article stock */
+.article-details-container .payment-details .stock {
+  color: #38a169;
+}
+
+/* Styling for the buy button */
+.article-details-container .payment-details .buy-button {
+  background-color: #f56565;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.article-details-container .payment-details .panier-button {
+  background-color: #1f0090;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.article-details-container .payment-details .buy-button:hover {
+  background-color: #e53e3e;
+}
+
+.price1{
+   text-decoration:line-through;
+}
+
+.rabais{
+  font-weight: 600;
+}
+
+.comment-box {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+}
+
+.comment {
+  margin-bottom: 15px;
+}
+
+.comment-button {
+  margin-top: 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.comment-button:hover {
+  background-color: #0056b3;
+}
+
+.comment-form {
+
+  margin-top: 20px;
+}
+
+.comment-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.comment-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.comment-form button:hover {
+  background-color: #0056b3;
+}

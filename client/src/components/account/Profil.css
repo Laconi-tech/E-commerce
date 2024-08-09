@@ -1,0 +1,20 @@
+.button-container {
+    display: flex;
+    justify-content: center; /* Centre les boutons horizontalement */
+    align-items: center; /* Centre les boutons verticalement (si nécessaire) */
+  }
+  
+  .button-container button {
+    margin: 10px;
+  }
+
+  .profile-buttons {
+    display: flex;
+    justify-content: center; /* Centre les boutons horizontalement */
+    align-items: center; /* Centre les boutons verticalement (si nécessaire) */
+    margin-top: 20px; /* Marge supérieure pour espacer les boutons du contenu supérieur */
+  }
+  
+  .profile-buttons button {
+    margin: 10px; /* Marge entre les boutons (ajustez selon vos préférences) */
+  }

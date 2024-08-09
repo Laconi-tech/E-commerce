@@ -1,0 +1,26 @@
+{# templates/modify_categories.html.twig #}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liste des catégories</title>
+</head>
+<body>
+    <h1>Liste des catégories</h1>
+    <ul>
+        {% for categorie in categories %}
+            <li>{{ categorie.getCategorie() }}</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Modifier les catégories</h1>
+
+    <h2>Ajouter une nouvelle catégorie</h2>
+    <form action="{{ path('add_category') }}" method="post">
+        <label for="categoryName">Nom de la catégorie :</label>
+        <input type="text" id="categoryName" name="categoryName" required>
+        <button type="submit">Ajouter</button>
+    </form>
+
+</body>
+</html>

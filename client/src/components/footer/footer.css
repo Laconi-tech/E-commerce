@@ -1,0 +1,8 @@
+.footer{
+    background: #237031;
+    display:flex;
+    position:relative;
+   bottom:0;  /* on le colle en bas */
+   width:100%;
+
+}
